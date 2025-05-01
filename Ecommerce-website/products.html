@@ -1,0 +1,111 @@
+<!-- products.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Products - PinkyStore</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar --> 
+<header>
+  <nav class="navbar">
+    <div class="logo">ShopEase</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="cart.html" class="cart-btn">🛒 Cart (<span id="cartItemCount">0</span>)</a></li>
+    </ul>
+  </nav>
+</header>
+  <!-- Product Page Main Content -->
+
+ <section class="products-page">
+  <div class="products-header">
+    <h1>Shop Our Latest Collection</h1>
+    <p>Discover the trendiest styles crafted just for you!</p>
+  </div>
+
+  <div class="products-grid">
+
+    <!-- Product 1 -->
+    <div class="product-card">
+      <img src="images/product1.png" alt="Floral Summer Dress">
+      <div class="product-info">
+        <h3>Floral Summer Dress</h3>
+        <p class="price">₹1,499</p>
+        <div class="product-buttons">
+    <button onclick="addToCart('Floral Summer Dress', 1499)">Add to Cart</button>
+          <button class="buy-btn" onclick="openOrderForm()">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 2 -->
+    <div class="product-card">
+      <img src="images/product2.png" alt="Sneakers">
+      <div class="product-info">
+        <h3>Sporty Sneakers</h3>
+        <p class="price">₹2,199</p>
+        <div class="product-buttons">
+    <button onclick="addToCart('Sporty Sneakers', 2199)">Add to Cart</button>
+          <button class="buy-btn" onclick="openOrderForm()">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 3 -->
+    <div class="product-card">
+      <img src="images/product3.png" alt="Leather Handbag">
+      <div class="product-info">
+        <h3>Leather Handbag</h3>
+        <p class="price">₹1,299</p>
+        <div class="product-buttons">
+    <button onclick="addToCart('Leather Handbag', 1299)">Add to Cart</button>
+          <button class="buy-btn" onclick="openOrderForm()">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product 4 -->
+    <div class="product-card">
+      <img src="images/product4.png" alt="Trendy Jeans">
+      <div class="product-info">
+        <h3>Trendy Jeans</h3>
+        <p class="price">₹899</p>
+        <div class="product-buttons">
+    	<button onclick="addToCart('Trendy Jeans', 899)">Add to Cart</button>
+          <button class="buy-btn" onclick="openOrderForm()">Buy Now</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Hidden Order Form Popup -->
+<div class="order-form-overlay" id="orderForm">
+  <div class="order-form">
+    <h2>Place Your Order</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="text" placeholder="Address" required>
+      <input type="text" placeholder="City" required>
+      <input type="number" placeholder="Phone Number" required>
+      <button type="submit" class="btn">Confirm Order</button>
+      <button type="button" class="btn cancel-btn" onclick="closeOrderForm()">Cancel</button>
+    </form>
+  </div>
+</div>
+
+  <!-- Footer (SAME as Home Page) -->
+  <footer>
+    <p>&copy; 2025 ShopEase. Crafted with ❤️ for shopaholics everywhere.</p>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
+
